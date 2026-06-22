@@ -1,0 +1,21 @@
+= 연습 8: 태깅 된 이미지를 OCIR 리포지토리에 푸시
+
+Docker 이미지에 태그를 지정한 후, Docker CLI를 사용하여 Oracle Cloud Infrastructure Registry 리포지토리에 푸시합니다.
+
+아래 절차에 따릅니다.
+
+1. Cloud Shell에서, 아래 형식의 명령을 수행하여 태깅된 Docker 이미지를 OCIR 리포지토리에 푸시합니다.
++
+----
+$ docker push <region-key>.ocir.io/<tenency-namespace>/<repo-name>:<tag>
+----
++
+실제 명령의 예는 아래와 같습니다:
++
+----
+$ docker push iad.ocir.io/idw9qpcf8tyn/iad-ap-lab09-ocir-1/oci_sample_webapp_user01:latest
+----
+
+---
+
+다음: link:./09_verify_pushed_image.adoc[푸시된 이미지 확인]

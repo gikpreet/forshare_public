@@ -1,0 +1,30 @@
+= 연습 3: zone-a.local 사용자 지정 프라이빗 영역 생성
+
+이 연습에서는 두 번째 VCN을 위한 두 번째 private zone을 생성합니다. 아래 절차에 따릅니다.
+
+1. OCI 콘솔에서, 왼쪽 위의 햄버거 메뉴를 클릭하고 **Networking** -> **DNS Management** -> **Private Zone**을 클릭합니다. 
+2. **Create Zone** 버튼을 클릭하고 아래와 같이 정보를 입력합니다.
+* **Zone name**: `zone-b.local`
+* **Create in compartment**: `practice_network`
+* **DNS private view** 구역에서:
+** **Selecting existing DNS private view** 선택
+** **DNS private view compartment**: `practice_network`
+** **DNS private view**: `IAD-AP-LAB06-1-VCN-02`
+
+3. **Create** 버튼을 클릭합니다.
+4. Zone이 생성되면, **Record**탭을 클릭하여 자동으로 생성된 NS와 SOA 레코드를 확인합니다.
+5. **Records** 페이지에서, **Manage records** 버튼을 클릭합니다.
+6. **Records** 페이지에서, **Manage records** 버튼을 클릭합니다.
+7. 아래와 같이 Record를 추가합니다.
+* **Name** `server01`
+* **Type**: `A - IPv4 address`
+* **TTL in seconds**: `60`
+* **Address**: `172.16.0.123`
+
+8. **Save Changes** 버튼을 클릭합니다.
+9. **Zone: zone-a.local** 페이지 생성된 레코드를 확인하고 **Review Changes** 버튼을 클릭합니다.
+10. **Publish changes** 버튼을 클릭합니다.
+
+---
+
+다음: link:./04_test.adoc[연관된 영역을 위한 인스턴스 테스트]

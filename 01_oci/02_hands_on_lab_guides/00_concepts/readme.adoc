@@ -1,0 +1,3 @@
+= OCI 개념
+
+* link:./01_delete_oci.adoc[OCI에서 리소스 삭제]

@@ -1,0 +1,11 @@
+= 연습 5: Oracle Cloud Infrastructure (OCI) Hands on Lab guide
+
+1. link:./01_compute_instance/readme.adoc[Lab 01: Linux Compute Instance를 생성하고 외부에서 접속]
+2. link:./02_nsg/readme.adoc[Lab 02: IP 대역(CIDR) 대신 다른 NSG를 소스(Source)로 지정하여 인그레스 규칙을 적용하는 네트워크 보안 그룹(NSG) 설정]
+3. link:./03_network_architecture/readme.adoc[Lab 03: 실제 네트워크 아키텍처 설계 및 구현: 프라이빗 DNS 영역, 뷰 및 리졸버 구성]
+4. link:./04_oci_function/readme.adoc[Lab 04: 클라우드 네이티브, 마이크로서비스 및 서버리스 아키텍처 설계: Oracle Function 구축 및 배포]
+5. link:./05_api_gateway/readme.adoc[Lab 05: 클라우드 네이티브, 마이크로서비스 및 서버리스 아키텍처 설계: API Gateway 배포 생성]
+6. link:./06_ocir_push_pull_docker_cli/readme.adoc[Lab 06: 클라우드 네이티브, 마이크로서비스 및 서버리스 아키텍처 설계: OCIR 관리와 Docker CLI를 사용하여 이미지 Push 및 Pull]
+7. link:./07_oke/readme.adoc[Lab 07: 클라우드 네이티브, 마이크로서비스 및 서버리스 아키텍처 설계: Kubectl을 사용하여 OKE 클러스터에서 로드-밸런싱된 웹 애플리케이션 배포]
+8. link:./08_terraform/readme.adoc[Lab 08: Infrastructure as Code: Terrform을 사용하여 재사용 가능한 VCN 구성 생성]
+9. link:./09_bucket_using_cli/readme.adoc[Lab 09: CLI를 사용하여 Bucket을 만들고 파일 업로드]

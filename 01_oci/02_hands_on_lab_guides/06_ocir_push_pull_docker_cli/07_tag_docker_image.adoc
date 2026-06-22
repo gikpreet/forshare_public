@@ -1,0 +1,39 @@
+= 연습 7:  Docker 이미지 태깅
+
+태그는 이미지를 푸시할 Oracle Cloud Infrastructure Registry(OCIR) 리전, 테넌시 및 리포지토리를 식별합니다.
+
+이 작업을 수행하려면 이전에 이 실습에서 생성한 Docker 이미지 `oci_sample webapp <userID>: <tag>` 가 필요합니다.
+
+아래 절차에 따릅니다.
+
+1. Cloud Shell에서, 아래의 같은 형태의 명령을 실행하여 OCIR에 푸시할 이미지에 태그를 첨부합니다.
++
+----
+$ docker tag oci_sample_webapp_user01:1.0 <region-key>.ocir.io/<tenancy-namespace>/<repo-name>:<tag>
+----
++
+실제 명령의 예는 아래와 같습니다:
++
+----
+$ docker tag oci_sample_webapp_user01:1.0 iad.ocir.io/idw9qpcf8tyn/iad-ap-lab09-ocir-1/oci_sample_webapp_user01:latest
+----
++
+옵션 설명
+
+* **<region-key>**: 사용 중인 Oracle Cloud Infrastructure 레지스트리 리전의 키입니다. 예를 들어, lad는 미국 동부(애쉬번) 리전의 리전 키입니다. Oracle Cloud Infrastructure 설명서의 리전별 가용성 항목을 참조하십시오.
+* **ocir.io**: 는 Oracle Cloud Infrastructure 레지스트리 이름입니다.
+* <tenancy-namespace>는 이미지를 푸시할 테넌시(테넌시 정보 페이지에 표시됨)의 자동 생성된 객체 스토리지 네임스페이스 문자열입니다. 예: oracletenancy
+* **<repo-name>**: 이미지를 푸시할 대상 리포지토리 이름입니다.(예: iad-ap-1ab09-1-ocir-1/oci_samp1e webapp_user01)
+* **<tag>**: Oracle Cloud Infrastructure 레지스트리에 이미지를 표시할 이미지 태그입니다. (예: latest)
+
+2. 아래 명령을 실행하여 태그가 지정된 새 이미지를 확인합니다.
++
+----
+$ docker images
+----
++
+NOTE: `1.0` 과 `latest` 태그가 붙은 두 이미지 모두 표시되며, 모두 같은 `IMAGE_ID` 를 가진 이미지에 기반합니다.
+
+---
+
+다음: link:./08_push_image_to_ocir.adoc[태깅 된 이미지를 OCIR 리포지토리에 푸시]
