@@ -1,0 +1,28 @@
+= 演習2：コンパートメントの作成
+
+この演習で使用するすべてのリソースを1つのコンパートメント（Compartment）で管理するために、**tasks**という名前のコンパートメントを作成します。以下の手順に従います。
+
+1. 左上のハンバーガーメニュー（≡）をクリックし、**Identity & Security**をクリックします。
++
+image:./images/02/image01.png[width=700]
+
+2. Identity & Securityメニューの**Identity**セクションで、**Compartments**をクリックします。
++
+image:./images/02/image02.png[width=700]
+
+3. **Compartment**ページで、**Create Compartment**ボタンをクリックします。
++
+image:./images/02/image03.png[width=500]
+
+4. **Create Compartment**ページで、以下の情報を入力し、右下の**Create Compartment**ボタンをクリックします。
++
+* **Name**: `tasks`
+* **Description**: `演習用のコンピュート・インスタンス`
+* **Parent compartment**: _ルート・コンパートメント（テナンシ名に「(root)」が付いて表示されます）_
+
++
+image:./images/02/image04.png[width=500]
+
+5. 作成されたコンパートメントを確認します。また、ルート・コンパートメントのSubcompartmentsの数が1つ増えていることを確認します。
++
+image:./images/02/image05.png[width=700]
