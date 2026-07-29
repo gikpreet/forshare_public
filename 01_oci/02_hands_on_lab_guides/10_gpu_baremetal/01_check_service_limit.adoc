@@ -44,3 +44,52 @@ image:./images/01/image03.png[]
 image:./images/01/image04.png[]
 
 == OCI 콘솔에서 서비스 한도 요청 (서비스 한도가 부족할 경우)
+
+여기에서는 서비스 한도가 부족할 경우, 서비스 한도를 요청합니다. 아래 절차에 따릅니다.
+
+1. OCI 콘솔에 유효한 계정으로 로그인합니다.
+2. 왼쪽 위의 햄버거 메뉴(≡)를 클릭합니다.
+3. **Governance & Administration**을 클릭하고 **Limits, Quotas and Usage**를 클릭합니다.
+4. 오른쪽 위의 **Request a service limit increase** 버튼을 클릭합니다.
++
+image:./images/01/image05.png[]
+
+5. Request limit increase 페이지에서, **Request name**과 **Reason for request**를 입력합니다.
+* **Request name**: Tokyo-BM-GPU-B4.8-Limit-Increase
+* **Reason for Request**: 
++
+----
+We request a Compute service limit increase for BM.GPU.B4.8.
+
+Region: Japan East (Tokyo), ap-tokyo-1
+Availability Domain: <target AD>
+Shape: BM.GPU.B4.8
+Required capacity: 1 bare metal instance
+Requested GPU count: 8, if the limit is GPU-based
+Planned start date: 2026-07-29
+Expected duration: 6 months
+Workload: Distributed AI model training and GPU performance validation
+Capacity type: On-demand
+
+Please confirm whether a capacity reservation is required for this shape.
+----
++
+image:./images/01/image06.png[]
+
+6. 오른쪽 아래의 **Next** 버튼을 클릭합니다.
+7. **Requested items** 구역에서 **Add** 버튼을 클릭합니다.
++
+image:./images/01/image07.png[]
+
+8. **Add requested item** 페이지의 **Select service**에서 **Service** 드롭다운 목록에서 **Compute**를 선택하고 오른쪽 아래의 **Next** 버튼을 클릭합니다.
++
+image:./images/01/image08.png[]
+
+9. **Select limit**에서 요청할 Shape를 검색하여 선택하고 가용성 도메인을 선택합니다. (이 연습에서는 BM.GPU.B4.8과 Ashburn 리전의 1번 AD를 선택했습니다)
+10. **Limits**에서 사용할 GPU 수를 입력합니다.
++
+NOTE: 여기서 중요한 점은 증가분이 아니라 **승인받고 싶은 최종 총값을 입력하는 것**입니다. 공식 요청 화면도 “증가시키려는 값”을 입력하도록 안내합니다.
++
+image:./images/01/image09.png[]
+
+11. 오른쪽 아래의 **Save** 버튼을 클릭합니다.
