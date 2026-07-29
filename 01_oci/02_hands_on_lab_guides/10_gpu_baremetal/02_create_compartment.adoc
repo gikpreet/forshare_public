@@ -1,4 +1,6 @@
 = 연습 2: 컴파트먼트 생성
+:toc:
+:sectnums:
 
 이 연습에서 사용하는 모든 리소스를 한 구획(Compartment)에서 사용하기 위해, **task** 라는 이름의 컴파트먼트를 생성합니다. 아래 절차에 따릅니다.
 
@@ -26,3 +28,8 @@ image:./images/02/image04.png[width=500]
 5. 생성된 컴파트먼트를 확인합니다. 루트 컴파트먼트의 Subcompartments 숫자가 하나 증가된 것도 확인합니다.
 +
 image:./images/02/image05.png[width=700]
+
+---
+
+link:./01_check_service_limit.adoc[이전: 연습 1 - 서비스 한도 확인] |
+link:./03_create_vcn.adoc[다음: 연습 3 - VCN 생성]

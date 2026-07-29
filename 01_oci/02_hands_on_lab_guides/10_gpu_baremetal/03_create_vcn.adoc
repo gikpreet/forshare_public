@@ -1,4 +1,6 @@
 = 연습 3: 가상 클라우드 네트워크(VCN) 생성
+:toc:
+:sectnums:
 
 여기에서는 컴퓨트 인스턴스가 위치할 가상 클라우드 네트워크(VCN - Virtual Cloud Network)를, VCN 마법사를 사용하여 생성합니다. 아래 절차에 따릅니다.
 
@@ -62,3 +64,8 @@ image:./images/03/image13.png[width=700]
 14. **Security** 탭을 클릭하고 생성된 Security List를 확인합니다. Network Security Groups에는 항목이 생성되지 않았음도 확인합니다.
 +
 image:./images/03/image14.png[width=700]
+
+---
+
+link:./02_create_compartment.adoc[이전: 연습 2 - 컴파트먼트 생성] |
+link:./04_ssh_key.adoc[다음: 연습 4 - VCN 생성]

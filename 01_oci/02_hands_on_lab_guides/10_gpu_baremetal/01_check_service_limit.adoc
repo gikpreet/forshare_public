@@ -1,4 +1,6 @@
 = 연습 1. 서비스 한도 확인
+:toc:
+:sectnums:
 
 이 연습에서는 GPU Bare Metal 인스턴스를 생성할 수 있는지 여부를 확인할 수 있는 서비스 한도(Service Limit)를 확인합니다.
 
@@ -93,3 +95,7 @@ NOTE: 여기서 중요한 점은 증가분이 아니라 **승인받고 싶은 �
 image:./images/01/image09.png[]
 
 11. 오른쪽 아래의 **Save** 버튼을 클릭합니다.
+
+---
+
+link:./02_create_compartment.adoc[연습 2: 컴파트먼트 생성]

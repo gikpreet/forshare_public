@@ -1,4 +1,6 @@
 = 연습 4. SSH 키 생성
+:toc:
+:sectnums:
 
 이 연습에서는 컴퓨트 인스턴스에서 인증을 위해 사용할 SSH 키를 생성합니다. 아래 절차에 따릅니다.
 
@@ -54,3 +56,8 @@ cmhod 600 oci_instances_key
 icacls oci_instances_key /inheritance:r
 icacls oci_instances_key /grant:r "%username%":F
 ----
+
+---
+
+link:./03_create_vcn.adoc[이전: 연습 3 - VCN 생성] |
+link:./05_bm_instance.adoc[다음: 연습 5. GPU BM 인스턴스 생성]

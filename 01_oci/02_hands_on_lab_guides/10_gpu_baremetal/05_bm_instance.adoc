@@ -1,4 +1,6 @@
-= 연습 4. GPU BM 인스턴스 생성
+= 연습 5. GPU BM 인스턴스 생성
+:toc:
+:sectnums:
 
 이 연습에서는 Oracle 공식 GitHub에서 제공하는 이미지를 사용하여 GPU BM 인스턴스를 생성합니다. 아래 절차에 따릅니다.
 
@@ -90,3 +92,7 @@ image:./images/05/image14.png[]
 7. 아래로 스크롤하고, **Custom images** 옵션을 선택한 후, 이미지 목록에서 Import 된 이미지를 선택합니다.
 +
 image:./images/05/image15.png[]
+
+---
+
+link:./04_ssh_key.adoc[이전: 연습 4 - SSH 키 생성] |
