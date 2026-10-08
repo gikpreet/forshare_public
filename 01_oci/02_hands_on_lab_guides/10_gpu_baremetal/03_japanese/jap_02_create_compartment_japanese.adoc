@@ -4,11 +4,11 @@
 
 1. 左上のハンバーガーメニュー（≡）をクリックし、**Identity & Security**をクリックします。
 +
-image:./images/02/image01.png[width=700]
+image:../images/02/image01.png[width=700]
 
 2. Identity & Securityメニューの**Identity**セクションで、**Compartments**をクリックします。
 +
-image:./images/02/image02.png[width=700]
+image:../images/02/image02.png[width=700]
 
 3. **Compartment**ページで、**Create Compartment**ボタンをクリックします。
 +
@@ -21,8 +21,8 @@ image:./images/02/image03.png[width=500]
 * **Parent compartment**: _ルート・コンパートメント（テナンシ名に「(root)」が付いて表示されます）_
 
 +
-image:./images/02/image04.png[width=500]
+image:../images/02/image04.png[width=500]
 
 5. 作成されたコンパートメントを確認します。また、ルート・コンパートメントのSubcompartmentsの数が1つ増えていることを確認します。
 +
-image:./images/02/image05.png[width=700]
+image:../images/02/image05.png[width=700]

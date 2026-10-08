@@ -1,0 +1,72 @@
+= Lab 4: Generate and SSH Key Pair
+
+In this lab, you will generate an SSH Key pair for authenticating and securely connecting to your Compute Instance.
+
+Follow the steps below:
+
+1. Open a terminal on your local machine.
+2. Navigate to your home directory by running the following command:
+* **macOS / Linux**
++
+----
+cd ~
+----
+* Windows
++
+----
+cd %userprofile%
+----
+
+3. Check whether the `.ssh` directory exists in your home directory. if it does not exist, create it by running the following command:
++
+----
+mkdir .ssh
+----
+
+4. Navigate to the `.ssh` directory by running the following command:
++
+----
+cd ./.ssh
+----
+
+5. Generate an SSH Key pair by running the following command. The key pair will be named `oci_instances_key`.
++
+----
+ssh-keygen -t rsa -b 4096 -f oci_instances_key
+----
++
+When prompted, follow these instructions:
+
+* Enter passphrase (empty for no passphrase): Press Enter without entering a passphrase.
+* Enter same passphrase again: Press Enter again to confirm the empty passphrase.
+
+6. Verify that the following two files have been generated.
+* `oci_instances_key`  - private key
+* `oci_instances_key.pub` - public key
+
++
+The private key will be used to authenticate SSH connections to your Compute Instance, while the public key will be uploadaed to OCI when createing the instance.
+
+7. Restrict access to the private key to ensure that only your user account can access it.
+* macOS / Linux
++
+Run tha following command:
++
+----
+chmod 600 oci_instances_key
+----
+* Windows
++
+Run the following command:
++
+----
+icacls oci_instances_key /inheritance:r
+icacls oci_instances_key /grant:r "%USERNAME%:F"
+----
+
+NOTE: Keep your private key secure and never share it. You use this SSH key pair in the next lab when creating and connecting your GPU Bare Metal instance.
+
+---
+
+link:./03_create_vcn.adoc[Previous: Lab 3 - Create a Virtual Cloud Network (VCN)] |
+link:./05_bm_instance.adoc[Next: Lab 5 - Create a GPU Bare Metal Instance]

@@ -24,11 +24,11 @@ OCIサービス制限（Service Limits）とは、テナンシ（Tenancy）内�
 2. 左上のハンバーガーメニュー（≡）をクリックします。
 3. **Governance & Administration**をクリックし、**Limits, Quotas and Usage**をクリックします。
 +
-image:./images/01/image01.png[]
+image:../images/01/image01.png[]
 
 4. **Limits, Quotas and Usage**ページで、`Filters`の右下にある**Edit Filters**ボタンをクリックします。
 +
-image:./images/01/image02.png[]
+image:../images/01/image02.png[]
 
 5. **Edit Filters**でフィルタを設定し、**Update**ボタンをクリックします。
 * **Service**ドロップダウン・リストから`Compute`を選択します。
@@ -36,12 +36,12 @@ image:./images/01/image02.png[]
 * **Compartment**で、リソースを配置するコンパートメントを選択します。
 
 +
-image:./images/01/image03.png[]
+image:../images/01/image03.png[]
 
 6. **Limits, Quotas and Usage**ページでフィルタが適用されていることを確認し、検索ボックスに`BM.GPU`と入力してリソース・フィルタを指定した後、検索ボタンをクリックします。
 7. 検索結果を確認します。**Service Limit**は制限として設定されているインスタンス数、**Usage**は使用中のインスタンス数、**Available**は使用可能なインスタンス数を示します。
 +
-image:./images/01/image04.png[]
+image:../images/01/image04.png[]
 
 == OCIコンソールでサービス制限をリクエストする（サービス制限が不足している場合）
 
@@ -52,9 +52,9 @@ image:./images/01/image04.png[]
 3. **Governance & Administration**をクリックし、**Limits, Quotas and Usage**をクリックします。
 4. 右上の**Request a service limit increase**ボタンをクリックします。
 +
-image:./images/01/image05.png[]
+image:../images/01/image05.png[]
 
-5. RRequest limit increaseページで、**Request name**と**Reason for request**を入力します。
+5. Request limit increaseページで、**Request name**と**Reason for request**を入力します。
 * **Request name**: Tokyo-BM-GPU-B4.8-Limit-Increase
 * **Reason for Request**: 
 +
@@ -74,22 +74,22 @@ Capacity type: On-demand
 Please confirm whether a capacity reservation is required for this shape.
 ----
 +
-image:./images/01/image06.png[]
+image:../images/01/image06.png[]
 
 6. 右下の**Next**ボタンをクリックします。
 7. **Requested items**セクションで**Add**ボタンをクリックします。
 +
-image:./images/01/image07.png[]
+image:../images/01/image07.png[]
 
 8. **Add requested item**ページの**Select service**で、**Service**ドロップダウン・リストから**Compute**を選択し、右下の**Next**ボタンをクリックします。
 +
-image:./images/01/image08.png[]
+image:../images/01/image08.png[]
 
 9. **Select limit**で、リクエストするシェイプを検索して選択し、可用性ドメインを選択します。この演習では、BM.GPU.B4.8とAshburnリージョンのAD 1を選択しました
 10. **Limits**に、使用するGPU数を入力します。
 +
 NOTE: ここで重要なのは、増加分ではなく、**承認を受けたい最終的な合計値を入力する**ことです。公式のリクエスト画面でも、引き上げ後に必要となる値を入力するよう案内されています。
 +
-image:./images/01/image09.png[]
+image:../images/01/image09.png[]
 
 11. 右下の**Save**ボタンをクリックします。

@@ -1,0 +1,22 @@
+= Creating and Testing a GPU Bare Metal Instance in OCI
+
+In this lab, you will use the OCI Console to create a GPU Bare Metal instance, connect to the provisioned instance, and test its environment.
+
+The process of creating a GPU Bare Metal instance in OCI is similar to that of creating a regular virtual machine (VM). However, it typically requires additional prerequisites, such as service limit requests and dedicated network configurations (RDMA/Cluster Network).
+
+In this lab, you will practice creating and testing a standalone GPU Bare Metal instance without a dedicated network configuration, such as RDMA.
+
+You will perform the following tasks:
+
+1. Check service limits.
+2. Prepare a Virtual Cloud Network (VCN) and a private subnet.
+3. Create and access a GPU Bare Metal instance.
+4. Verify the GPU instance configuration and environment.
+
+== Table of Contents
+
+1. link:./01_check_service_limit.adoc[Check Service Limits]
+2. link:./02_create_compartment.adoc[Create a Compartment]
+3. link:./03_create_vcn.adoc[Create a Virtual Cloud Network (VCN)]
+4. link:./04_ssh_key.adoc[Generate an SSH Key Pair]
+5. link:./05_bm_instance.adoc[Create a GPU Bare Metal Instance]
